@@ -1,0 +1,13 @@
+Programowanie mikrousług:
+2 części - zajecia trwaja 3 - 8 ale zaliczenie do konca semestru - pewnie prezentacją 
+kolokwium wykładowe w połowie, do umówienia
+
+kolos:
+docker i best practices z np. przechowywaniem danych czyli w przypadku mikrousług problem z zachowaniem spojnosci danych
+
+cw.
+zbudowac obraz z dzialajacego kontenera
+napisac dockerfile'a i zbudowac z tego obraz / uruchamia jakis process
+jak uzywac helpa, ogarniac sieci, 
+
+woluminy - np. defaultowa lokalizacja (gdy nie podamy sciezki / nazwy)
