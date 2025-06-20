@@ -16,11 +16,13 @@
 
     /* Bouncing image */
     #image {
+left: 0;
+top: 0;
       position: absolute;
       width: auto;
       height: auto;
-      max-width: 325px;
-      max-height: 325px;
+      max-width: 300px;
+      max-height: 300px;
       transform-origin: top left;
       user-select: none;
       pointer-events: none;
@@ -84,8 +86,8 @@
   <script>
     const img = document.getElementById("image");
 
-    let posX = 0;
-    let posY = 0;
+    let posX = 1;
+    let posY = 1;
     let velX = 3;
     let velY = 3;
 
