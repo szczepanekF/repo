@@ -17,7 +17,10 @@
     /* Bouncing image */
     #image {
       position: absolute;
-      transform: scale(0.5);
+      width: auto;
+      height: auto;
+      max-width: 100px;
+      max-height: 100px;
       transform-origin: top left;
       user-select: none;
       pointer-events: none;
@@ -87,8 +90,8 @@
     let velY = 3;
 
     function move() {
-      const imgWidth = img.offsetWidth * 0.5;
-      const imgHeight = img.offsetHeight * 0.5;
+      const imgWidth = img.offsetWidth;
+      const imgHeight = img.offsetHeight;
       const winWidth = window.innerWidth;
       const winHeight = window.innerHeight;
 
@@ -109,8 +112,8 @@
     };
 
     window.onresize = () => {
-      const maxX = window.innerWidth - img.offsetWidth * 0.5;
-      const maxY = window.innerHeight - img.offsetHeight * 0.5;
+      const maxX = window.innerWidth - img.offsetWidth;
+      const maxY = window.innerHeight - img.offsetHeight;
       posX = Math.min(posX, maxX);
       posY = Math.min(posY, maxY);
     };
