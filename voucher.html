@@ -87,8 +87,8 @@
     let velY = 3;
 
     function move() {
-      const imgWidth = img.offsetWidth;
-      const imgHeight = img.offsetHeight;
+      const imgWidth = img.offsetWidth * 0.5;
+      const imgHeight = img.offsetHeight * 0.5;
       const winWidth = window.innerWidth;
       const winHeight = window.innerHeight;
 
@@ -109,8 +109,8 @@
     };
 
     window.onresize = () => {
-      const maxX = window.innerWidth - img.offsetWidth;
-      const maxY = window.innerHeight - img.offsetHeight;
+      const maxX = window.innerWidth - img.offsetWidth * 0.5;
+      const maxY = window.innerHeight - img.offsetHeight * 0.5;
       posX = Math.min(posX, maxX);
       posY = Math.min(posY, maxY);
     };
